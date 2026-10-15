@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arts Inn Gallery - Chi siamo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 font-sans">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-500">The Arts Inn</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition font-medium">Home</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition font-medium">Chi siamo</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition font-medium">Menu</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition font-medium">Galleria</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition font-medium">Prenota</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition font-medium">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-neutral-900 py-4 border-b border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-neutral-400">
+            <a href="index.html" class="hover:text-amber-500">Home</a> > <span class="text-amber-500">Chi siamo</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-amber-500">La Nostra Storia</h1>
+        <div class="space-y-6 text-lg text-neutral-300 leading-relaxed">
+            <p>The Arts Inn is a unique and intimate art gallery and cocktail bar located in the heart of Florence, nestled in a historic 15th-century building just steps from Santa Maria Novella. Once a renowned framer's workshop for fifty years, it later became the painting atelier of an artist who envisioned this wonderful space combining visual art with a cozy lounge atmosphere. The gallery showcases a curated blend of classic and contemporary realism, as well as works celebrating craftsmanship, sculpture, and photography, providing both a physical and virtual platform for talented emerging and established artists.</p>
+            <p>More like a welcoming lounge than a conventional gallery, The Arts Inn invites visitors to admire and purchase original artwork while sipping fine local wine or expertly crafted, artisanal cocktails. The venue is characterized by its boho charm, quirky artworks, mismatched furnishings, and a carefully curated soundtrack featuring rock, jazz, blues, ambient, and trip-hop music. It serves as a vibrant cultural hub where creativity, great drinks, and exceptional company seamlessly merge for an unforgettable Florentine experience.</p>
+        </div>
+
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold mb-6 text-amber-400">Fatti Unici</h2>
+            <ul class="space-y-4">
+                <li class="bg-neutral-900 border border-neutral-800 p-4 rounded-xl">
+                    📍 Located in a historic 15th-century building just steps away from Santa Maria Novella in Florence.
+                </li>
+                <li class="bg-neutral-900 border border-neutral-800 p-4 rounded-xl">
+                    🎨 Previously operated as a renowned framer's workshop for fifty years before transforming into an artist's painting atelier and later a gallery-bar.
+                </li>
+                <li class="bg-neutral-900 border border-neutral-800 p-4 rounded-xl">
+                    🍸 Unique hybrid concept combining a fine art exhibition space with an intimate, boho-chic cocktail lounge.
+                </li>
+                <li class="bg-neutral-900 border border-neutral-800 p-4 rounded-xl">
+                    🎵 Curated background music featuring non-commercial genres like rock, jazz, blues, ambient, and trip-hop.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-900 text-neutral-300 py-12 border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-amber-500 mb-4">The Arts Inn Gallery</h3>
+                <p class="text-sm">Via del Porcellana 63R, 50123 Firenze FI, Italy</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-amber-500 mb-4">Orari di Apertura</h3>
+                <p class="text-sm">Martedì - Domenica: 18:00 - 00:00</p>
+                <p class="text-sm">Lunedì: Chiuso</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-amber-500 mb-4">Contatti</h3>
+                <p class="text-sm">Tel: +39 3511032085</p>
+                <p class="text-sm">Email: theartsinn.florence@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
